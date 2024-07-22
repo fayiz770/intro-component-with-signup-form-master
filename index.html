@@ -30,11 +30,35 @@
         </div>
         <div class="form">
           <form action="#">
-            <input type="text" placeholder="Frist Name" required>
-            <input type="text" placeholder="Last Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">claim your free trial</button>
+            <div class="first-name-container input">
+              <div class="first-name-info info" >
+                <input type="text" placeholder="Frist Name" id="first-name" required>
+                <img class="icon-error" id="icon-first-name" src="images/icon-error.svg" alt="icon-error">
+              </div>
+              <div class="first-name text-error" id="first-name-text">First Name cannot be empty</div>
+            </div>
+            <div class="last-name-container input">
+              <div class="last-name-info info">
+                <input type="text" placeholder="Last Name" id="last-name" required>
+                <img class="icon-error" id="icon-last-name" src="images/icon-error.svg" alt="icon-error">
+              </div>
+              <div class="Last-name text-error" id="last-name-text">Last Name cannot be empty</div>
+            </div>
+            <div class="email-container input">
+              <div class="email-info info">
+                <input type="email" placeholder="Email Address" id="email" required>
+                <img class="icon-error" id="icon-email" src="images/icon-error.svg" alt="icon-error">
+              </div>
+              <div class="email text-error" id="email-text">Looks like this is not an email</div>
+            </div>
+            <div class="password-container input">
+              <div class="password-info info">
+                <input type="password" placeholder="Password" id="password" required>
+                <img class="icon-error" id="icon-password" src="images/icon-error.svg" alt="icon-error">
+              </div>
+              <div class="password text-error" id="password-text">Password cannot be empty</div>
+            </div>
+            <button type="submit" id="submit">claim your free trial</button>
           </form>
           <p class="terms">
             By clicking the button you are agreeing to our <span class="terms-services">Terms and Services</span>
@@ -49,5 +73,6 @@
       </p>
     </footer>
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
