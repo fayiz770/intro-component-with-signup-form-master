@@ -3,49 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 </head>
 <body>
-  <article class="article">
-    <div class="hero">
-      <h1 class="title">Learn to code by watching others</h1>
-      <p class="text">
-        See how experienced developers solve problems in real-time. 
-        Watching scripted tutorial is greate, but understanding how developers think is invaluable.
+  <div class="body">
+    <article class="article">
+      <div class="hero">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="text">
+          See how experienced developers solve problems in real-time. 
+          Watching scripted tutorial is greate, but understanding how developers think is invaluable.
+        </p>
+      </div> 
+      <div class="main">
+        <div class="free-trial">
+          <p class="free-trial-text">
+            <span class="try">Try it free 7 days</span> then
+          </p>
+          <p class="free-trial-cost">
+            $20/mo. thereafter
+          </p>
+        </div>
+        <div class="form">
+          <form action="#">
+            <input type="text" placeholder="Frist Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">claim your free trial</button>
+          </form>
+          <p class="terms">
+            By clicking the button you are agreeing to our <span class="terms-services">Terms and Services</span>
+          </p>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="htpps://github.com/fayiz770" target="_blank">Mohammad Waris Fayiz</a>.
       </p>
-    </div> 
-    <div class="main">
-      <div class="free-trial">
-        <p class="free-trial-text">
-          <span class="try">Try it free 7 days</span> then
-        </p>
-        <p class="free-trial-cost">
-          $20/mo. thereafter
-        </p>
-      </div>
-      <div class="form">
-        <form action="#">
-          <input type="text" placeholder="Frist Name">
-          <input type="text" placeholder="Last Name">
-          <input type="email" placeholder="Email Address">
-          <input type="password" placeholder="Password">
-          <button type="submit">claim your free trial</button>
-        </form>
-        <p class="terms">
-          By clicking the button you are agreeing to our <span class="terms-services">Terms and Services</span>
-        </p>
-      </div>
-      <div class="form"></div>
-    </div>
-  </article>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="htpps://github.com/fayiz770">Mohammad Waris Fayiz</a>.
-    </p>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
